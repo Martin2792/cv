@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Marti</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>MARTIN MARTINEZ</h1>
+            <h2>Desarrollador de Software </h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/martin-joel-martinez-perez-195712121/"  target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Martin2792" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Martin Martinez.</span> Soy un programador apasionado con experiencia en el desarrollo de aplicaciones web y 
+                móviles, enfocado en la creación de soluciones eficientes y escalables. Con sólidos 
+                conocimientos en lenguajes como PHP, Python y tecnologías de desarrollo web, me 
+                especializo en el diseño y optimización de sistemas que mejoren la experiencia del 
+                usuario. Poseo una fuerte capacidad para aprender nuevas tecnologías, resolver 
+                problemas complejos y trabajar de manera colaborativa en equipos multidisciplinarios.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            27-12-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+507) 6471-9253
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            martin13-27@hotmail.com
+                        </li>
+                        <!-- <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li> -->
+                        <li>
+                            <strong>Dirección</strong>
+                            Tocumen, Panamá
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>PLAYA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>    
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Tecnologías</h3>
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="img/html5.png" alt="">
+                            <span>Html</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/css5.png" alt="">
+                            <span>Css</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/php.png" alt="">
+                            <span>Php</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/python.png" alt="">
+                            <span>Python</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/js.png" alt="">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/sql.png" alt="">
+                            <span>Sql</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Herramientas</h3>
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="img/git.png" alt="">
+                            <span>Git</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/github.png" alt="">
+                            <span>Git Hub</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/postman.png" alt="">
+                            <span>PostMan</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/soapui.png" alt="">
+                            <span>SoapUI</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/source.png" alt="">
+                            <span>SourceThree</span>
+                        </div>
+                        <div class="icon-item">
+                            <img src="img/zoho.ico" alt="">
+                            <span>zoho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Desarrollo de Software</h4>
+                        <span class="casa">Universidad Tecnologia de Panamá</span>
+                        <span class="fecha">2015 - 2024</span>
+                        <p>La Licenciatura en Desarrollo de Software busca suplir las necesidades de las organizaciones o empresas de Software de tipo Administrativo, Comercial, Financiero y de Mercadotecnia, entre otros.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Ingeniería con Especialización en Desarrollo de Software</h4>
+                        <span class="casa">Universidad Tecnologia de Panamá</span>
+                        <span class="fecha">2015 - 2023</span>
+                        <p>El Técnico en Ingeniería con Especialización en Desarrollo de Software tiene como objetivo preparar profesionales técnicos capaces de desarrollar, implementar y mantener software que atienda las necesidades de pequeñas y medianas empresas. El enfoque está orientado a aplicaciones prácticas en áreas como la programación, bases de datos y soporte técnico. Los egresados están capacitados para resolver problemas tecnológicos específicos y apoyar proyectos de software en sectores como el administrativo, comercial y financiero.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en Comercio con Enfasis en Contabilidad e Informatica</h4>
+                        <span class="casa">Centro Laboral Nocturna de Tocumen</span>
+                        <span class="fecha">2009 - 2011</span>
+                        <p>Es un programa de estudios que se centra en estas áreas de manera especializada. Esto permite a los estudiantes obtener resultados a corto y largo plazo, y tener mejores opciones de progreso y toma de decisiones para su carrera profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programador Web</h4>
+                        <span class="casa">Creatividad Continua</span>
+                        <span class="fecha">2018-2024 / 6 años con 11 meses</span>
+                        <p>
+                            En mi último puesto, me encargué del desarrollo y mantenimiento de aplicaciones web 
+                            utilizando PHP, JavaScript y AJAX. Fui responsable de la creación de APIs RESTful, diseño 
+                            de bases de datos en MySQL y la integración de servicios externos. Además, 
+                            documentaba detalladamente cada aplicación para facilitar su mantenimiento y 
+                            comprensión por parte del equipo. Trabajé de manera colaborativa con el equipo de 
+                            desarrollo para garantizar la funcionalidad, la seguridad y la escalabilidad de las 
+                            aplicaciones.     
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Call Center Agent</h4>
+                        <span class="casa">Affinity Global</span>
+                        <span class="fecha">2016-2017 / 1 año con 6 meses </span>
+                        <p>
+                            En este puesto, me encargué de recibir y gestionar llamadas de clientes, brindando 
+                            soporte y resolviendo inquietudes de manera eficiente. Desarrollé habilidades de 
+                            comunicación efectiva, atención al cliente y resolución de problemas, manteniendo un 
+                            enfoque en la satisfacción del cliente. Aprendí a gestionar múltiples tareas 
+                            simultáneamente, administrar el tiempo de manera eficiente y manejar situaciones de 
+                            alta presión.     
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Technical Support Help Desk</h4>
+                        <span class="casa">Grupo Primavera Holding S.A</span>
+                        <span class="fecha">2014-2014 / 7 meses</span>
+                        <p>
+                            Brindé soporte técnico a todas las sucursales de Dorian's y Saks, resolviendo problemas 
+                            de hardware y software de manera remota. Me encargaba del mantenimiento y 
+                            reparación de impresoras, y recibía llamadas de empleados que necesitaban asistencia 
+                            técnica. Cuando los problemas no podían resolverse de forma remota, me desplazaba 
+                            personalmente a las sucursales para ofrecer soporte en sitio y asegurar una pronta 
+                            resolución. Esta experiencia me permitió desarrollar habilidades en resolución de 
+                            problemas, manejo de incidencias y trabajo en equipo bajo presión. 
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/martin13-27@hotmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Tú Nombre">
+                        <input type="text" name="phone" placeholder="Número telefónico">
+                        <input type="text" name="email" placeholder="Dirección de correo">
+                        <input type="text" name="subject" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion1.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Panamá, Tocumen
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                contacto: (+507) 6471-9253
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: martin13-27@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

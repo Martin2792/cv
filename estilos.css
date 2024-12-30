@@ -815,4 +815,12 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+    .contacto .fila .col img {
+        height: 300px; /* Ajusta la altura según lo que necesites */
+        width: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin recortes */
+    }
+
+    
 }

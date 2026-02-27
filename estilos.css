@@ -54,6 +54,23 @@ html{
     color: #1CB698;
 }
 
+
+.contenedor-img {
+    width: 180px;
+    aspect-ratio: 1 / 1;   /* 🔥 Esto lo hace cuadrado automáticamente */
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;      /* recorta la imagen */
+}
+
+.contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
 .nav-responsive{
     background-color: #1CB698;
     color:#fff;
@@ -85,12 +102,14 @@ html{
 }
 
 .inicio .contenido-banner img{
-    margin-top: 40px;
+    margin-top: 90px;
     border: 10px solid #9ca3a2;
     display: block;
-    width: 80%;
+    width: 180px;
+    height: 180px;
     margin: auto;
-    border-radius: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .inicio .contenido-banner h1{
@@ -326,16 +345,28 @@ html{
 
 }
 .skills .fila{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 40px;
 }
 .skills .fila .col{
-    width: 50%;
+    width: 100%;
     padding: 0 20px;
 }
 .skills .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+}
+.skills .fila .col .icon-grid{
+    margin-bottom: 35px;
+}
+.skills .fila .col .skills-desc{
+    font-size: 14px;
+    color: #d0d0d0;
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 .skills .skill > span{
     font-weight: bold;
@@ -509,6 +540,8 @@ html{
     font-size: 22px;
     font-weight: bold;
     display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 .curriculum .fila .item .fecha{
     display: block;
@@ -583,11 +616,12 @@ html{
 .portfolio .galeria{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }
 .portfolio .galeria .proyecto{
     position: relative;
-    max-width: 340px;
+    max-width: 320px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
@@ -620,6 +654,24 @@ html{
 }
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
+}
+.ver-mas-portfolio{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Righteous';
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+.ver-mas-portfolio i{
+    font-size: 20px;
+    transition: transform .3s;
+}
+.ver-mas-portfolio:hover i{
+    transform: translateY(4px);
 }
 /* SECCION CONTACTO */
 .contacto{
